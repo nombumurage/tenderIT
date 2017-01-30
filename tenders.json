@@ -1,0 +1,43 @@
+{ "tenders": [{}],
+  "agricultures": [{
+    "companyname": "KACLRO",
+    "details": "Seeds for flowers. ",
+    "tender_no": "KARLO/1029",
+    "open_dates": "12/01/2017",
+    "close_dates": "15/02/2017",
+    "downloads": 5
+  }],
+  "healths": [{
+    "companyname": "Phillips",
+    "details": "Medical supplies including sygrines, guazes, anti-septics, antibiotis etc",
+    "tender_no": "Ph/342",
+    "open_dates": "13/12/2016",
+    "close_dates": "25/01/2017",
+    "downloads": 15
+  }],
+   "ITs": [{
+      "companyname": "SolutionsAfrica",
+      "details": "Programming UX/UI developer for 3 months",
+      "tender_no": "SA/584/3",
+      "open_dates": "31/01/2017",
+      "close_dates": "14/02/2017",
+      "downloads": 5
+  }],
+  "Supplies": [{
+      "companyname": "Jumia",
+      "details": "Electornics: household appliances, mobiles and TVs sets",
+      "tender_no": "J/Elec/796",
+      "open_dates": "10/01/2017",
+      "close_dates":"13/03/2017",
+      "downloads": 21
+      }],
+  "others": [{
+        "companyname": "AgencyInc",
+        "details": "weygbhrjdfhfojereijpfklewdjpsklrhofjlm",
+        "tender_no": "AI/04755",
+        "open_dates": "30/01/2017",
+        "close_dates": "30/03/2017",
+        "downloads": 0
+    }]
+
+}
