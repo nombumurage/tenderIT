@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('contact');
   this.route('about');
   this.route('tender');
+  this.route('agriculture');
+  this.route('health');
 });
 
 export default Router;

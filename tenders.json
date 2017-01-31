@@ -15,7 +15,7 @@
     "close_dates": "25/01/2017",
     "downloads": 15
   }],
-   "ITs": [{
+   "its": [{
       "companyname": "SolutionsAfrica",
       "details": "Programming UX/UI developer for 3 months",
       "tender_no": "SA/584/3",
@@ -23,7 +23,7 @@
       "close_dates": "14/02/2017",
       "downloads": 5
   }],
-  "Supplies": [{
+  "supplies": [{
       "companyname": "Jumia",
       "details": "Electornics: household appliances, mobiles and TVs sets",
       "tender_no": "J/Elec/796",

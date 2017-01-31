@@ -1,0 +1,12 @@
+<div>
+  {{#each model.agricultures as |agriculture|}}
+    <div>{{agriculture-tile agriculture=agriculture}}</div>
+  {{/each}}
+</div>
+{{#link-to 'agriculture'}}agriculture{{/link-to}}
+
+<ul>
+  {{#each model.agricultures as |agriculture|}}
+    <h3>{{agriculture.companyname}} </h3>
+  {{/each}}
+</ul>

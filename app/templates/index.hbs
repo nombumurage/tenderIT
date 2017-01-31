@@ -1,1 +1,32 @@
-{{outlet}}
+<!-- <div>
+  {{#each model.agricultures as |agriculture|}}
+    <div>{{agriculture-tile agriculture=agriculture}}</div>
+  {{/each}}
+</div> -->
+
+{{#link-to 'agriculture'}}agriculture{{/link-to}}
+
+
+<div>
+  {{#each model.healths as |health|}}
+    <div>{{health-tile health=health}}</div>
+  {{/each}}
+</div>
+
+ <div>
+  {{#each model.supplies as |supply|}}
+    <div>{{supplies-tile supply=supply}}</div>
+  {{/each}}
+</div>
+
+<!-- <div>
+  {{#each model.agricultures as |agriculture|}}
+    <li>{{tender-tile tender=tender}}</li>
+  {{/each}}
+</div>
+
+<div>
+  {{#each model.agricultures as |agriculture|}}
+    <li>{{tender-tile tender=tender}}</li>
+  {{/each}}
+</div> --> -->
