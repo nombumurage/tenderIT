@@ -1,0 +1,46 @@
+{{#if addNewTender}}
+<h1>Give Your Answer</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="companyname">Company Name:</label>
+      {{input value=companyname  id="companyname"}}
+    </div>
+    <div class="form-group">
+      <label for="details">Deatils:</label>
+      {{ input value= details id="details"}}
+    </div>
+    <div class="form-group">
+      <label for="tender_no">Tender No:</label>
+      {{input value=tender_no  id="tender_no"}}
+    </div>
+    <div class="form-group">
+      <label for="open_dates">Open Dates:</label>
+      {{input value=open_dates  id="open_dates"}}
+    </div>
+    <div class="form-group">
+      <label for="close_dates">Close Dates:</label>
+      {{input value=close_dates  id="close_dates"}}
+    </div>
+
+        <button {{action 'saveAgriculture1'}}> save agriculture</button>
+    <!-- <button data-dropdown="drop" aria-controls="drop" aria-expanded="false" class="large alert round button dropdown">Choose Category</button><br>
+      <ul id="drop" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false" tabindex="-1">
+        <li>  <button {{action 'saveAgriculture'}}>  AGRICULTURE</button></li>
+        <li>  <button {{action 'saveIT'}}>IT</button></li>
+        <li>  <button {{action 'saveHealth'}}>HEALTH</button></li>
+        <li>  <button {{action 'saveSupply'}}>SUPPLIES</button></li>
+        <li>  <button {{action 'saveOther'}}>OTHERS</button></li>
+      </ul> -->
+  </form>
+</div>
+{{else}}
+    <button {{action 'tenderFormShow'}}> ADD TENDER</button>
+
+
+{{/if}}
+
+
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'index'}}Home{{/link-to}}

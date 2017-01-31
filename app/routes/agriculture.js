@@ -8,4 +8,11 @@ export default Ember.Route.extend({
     });
 
 },
+// actions: {
+//     saveAgriculture3(params) {
+//       var newAgriculture = this.store.createRecord('agriculture', params);
+//       newAgriculture.save();
+//       this.transitionTo('agriculture');
+//     }
+//   }
 });
