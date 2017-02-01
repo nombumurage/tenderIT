@@ -1,3 +1,6 @@
 <div>
-    <p>{{health.companyname}}{{health.details}}{{health.tender_no}} </p>
+      {{#link-to 'display-health' health.id}}
+      <h2>{{health.companyname}}</h2>
+      {{/link-to}}
+    <!-- <p>  {{agriculture.details}}{{agriculture.tender_no}} </p> -->
 </div>

@@ -1,8 +1,42 @@
 .header{
 color: orange;
-text-align: center;
+text-align: ;
+font-family: 'Sonsie One', cursive;
 }
-.brand{
-  height: 50px;
-  width: 50px;
+
+h2{
+  font-size: 40px;
+  background: -webkit-linear-gradient(#000, #F00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-header{
+  background-image: url('../assets/images/unnamed.png');
+  height: 100%;
+  background-position: center;
+  padding-bottom: 25%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-background-position-x: center;
+  -ms-background-position-y: bottom;
+  background-position: center bottom;
+}
+.navbar-inverse{
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fff;
 }

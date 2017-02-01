@@ -3,7 +3,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
   return Ember.RSVP.hash({
-      healths: this.store.findAll('health'),
+      supplies: this.store.findAll('supply'),
+
     });
 
 },

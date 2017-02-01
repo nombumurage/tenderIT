@@ -1,1 +1,6 @@
-{{yield}}
+<div>
+  {{#link-to 'display-it' it.id}}
+    <h2>{{it.companyname}}</h2>
+    {{/link-to}}
+<p> {{it.details}}{{it.tender_no}} </p>
+</div>

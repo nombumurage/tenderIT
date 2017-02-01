@@ -1,3 +1,6 @@
 <div>
-    <p>{{supply.companyname}}{{supply.details}}{{supply.tender_no}} </p>
+    {{#link-to 'display-supply' supply.id}}
+    <h2>{{supply.companyname}}</h2>
+    {{/link-to}}
+  <p>  {{supply.details}}{{supply.tender_no}}</p>
 </div>

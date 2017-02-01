@@ -1,3 +1,7 @@
 <div>
-    <p>{{agriculture.companyname}}{{agriculture.details}}{{agriculture.tender_no}} </p>
+      {{#link-to 'display' agriculture.id}}
+      <h2>{{agriculture.companyname}}</h2>
+
+      {{/link-to}}
+    <!-- <p>  {{agriculture.details}}{{agriculture.tender_no}} </p> -->
 </div>

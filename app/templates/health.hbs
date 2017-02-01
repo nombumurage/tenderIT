@@ -1,1 +1,5 @@
-{{outlet}}
+<div>
+  {{#each model.healths as |health|}}
+    <div>{{health-tile health=health}}</div>
+  {{/each}}
+</div>

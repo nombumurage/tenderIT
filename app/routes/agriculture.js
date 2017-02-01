@@ -4,10 +4,11 @@ export default Ember.Route.extend({
   model() {
   return Ember.RSVP.hash({
       agricultures: this.store.findAll('agriculture'),
-
+      
     });
 
 },
+});
 // actions: {
 //     saveAgriculture3(params) {
 //       var newAgriculture = this.store.createRecord('agriculture', params);
@@ -15,4 +16,3 @@ export default Ember.Route.extend({
 //       this.transitionTo('agriculture');
 //     }
 //   }
-});

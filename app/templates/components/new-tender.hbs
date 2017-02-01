@@ -23,20 +23,17 @@
       {{input value=close_dates  id="close_dates"}}
     </div>
 
-        <button {{action 'saveAgriculture1'}}> save agriculture</button>
-    <!-- <button data-dropdown="drop" aria-controls="drop" aria-expanded="false" class="large alert round button dropdown">Choose Category</button><br>
-      <ul id="drop" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false" tabindex="-1">
-        <li>  <button {{action 'saveAgriculture'}}>  AGRICULTURE</button></li>
-        <li>  <button {{action 'saveIT'}}>IT</button></li>
-        <li>  <button {{action 'saveHealth'}}>HEALTH</button></li>
-        <li>  <button {{action 'saveSupply'}}>SUPPLIES</button></li>
-        <li>  <button {{action 'saveOther'}}>OTHERS</button></li>
-      </ul> -->
+        <!-- <button {{action 'saveAgriculture1'}}> save agriculture</button> -->
+  <li>  <button {{action 'saveAgriculture1'}}>  AGRICULTURE</button></li>
+        <li>  <button {{action 'saveIt1'}}>IT</button></li>
+        <li>  <button {{action 'saveHealth1'}}>HEALTH</button></li>
+        <li>  <button {{action 'saveSupply1'}}>SUPPLIES</button></li>
+        <li>  <button {{action 'saveOther1'}}>OTHERS</button></li>
+
   </form>
 </div>
 {{else}}
     <button {{action 'tenderFormShow'}}> ADD TENDER</button>
-
 
 {{/if}}
 
