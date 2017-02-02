@@ -24,7 +24,7 @@ export default Ember.Component.extend({
       details: this.get('details'),
           tender_no: this.get('tender_no'),
               open_dates: this.get('open_dates'),
-                Cclose_dates: this.get('close_dates')
+                close_dates: this.get('close_dates')
 
       };
       this.set('updateTenderForm', false);

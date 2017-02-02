@@ -1,14 +1,38 @@
 {{new-tender saveAgriculture2="saveAgriculture3" saveHealth2="saveHealth3"
 saveSupply2="saveSupply3" saveIt2="saveIt3" saveOther2="saveOther3"}}
 
-{{ delete-tender agriculture=model health=model it=model other=model supply=model
+<!-- {{ delete-tender agriculture=model health=model it=model other=model supply=model
     destroyAgriculture="destroyAgriculture" destroyHealth="destroyHealth"
-    destroyOther="destroyOther" destroySupply="destroySupply" destroyIt="destroyIt"}}
+    destroyOther="destroyOther" destroySupply="destroySupply" destroyIt="destroyIt"}} -->
 
- {{update-tender agriculture=model health=model supply=model
-   other=model it=model update="update"}}
 
-{{delete-tender }}
+
+    <li> {{#each model.agricultures as |agriculture|}}
+    <h2>{{agriculture.companyname}}</h2>
+    <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyAgriculture' agriculture}}> DELETE AGRICULTURE</button>
+     {{update-tender update="update"}}
+    {{/each}}</li>
+
+    {{#each model.healths as |health|}}
+       <h2>{{health.companyname}}</h2>
+       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyHealth' health}}> DELETE HEALTH</button>
+       {{/each}}
+
+      {{#each model.supplies as |supply|}}
+       <h2>{{supply.companyname}}</h2>
+       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroySupply' supply}}> DELETE SUPPLY</button>
+       {{/each}}
+
+      {{#each model.its as |it|}}
+       <h2>{{it.companyname}}</h2>
+       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyIt' it}}> DELETE IT</button>
+       {{/each}}
+
+      {{#each model.others as |other|}}
+       <h2>{{other.companyname}}</h2>
+       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyOther' other}}> DELETE OTHER</button>
+       {{/each}}
+
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'index'}}Home{{/link-to}}

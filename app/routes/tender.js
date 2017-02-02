@@ -64,7 +64,7 @@ actions: {
         return health.destroyRecord();
         this.transitionTo('health');
     },
-    
+
     update(agriculture, params) {
 Object.keys(params).forEach(function(key) {
   if(params[key]!==undefined) {
@@ -77,7 +77,7 @@ this.transitionTo('agriculture');
 update(supply, params) {
 Object.keys(params).forEach(function(key) {
 if(params[key]!==undefined) {
-suppy.set(key,params[key]);
+supply.set(key,params[key]);
 }
 });
 supply.save();
@@ -98,7 +98,7 @@ if(params[key]!==undefined) {
 it.set(key,params[key]);
 }
 });
-inspect.save();
+it.save();
 this.transitionTo('it ');
 },
 update(health, params) {

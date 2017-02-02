@@ -1,9 +1,10 @@
+
 {{#if updateTenderForm}}
 <div>
   <form>
     <div class="form-group">
       <label for="companyname">Company Name:</label>
-      {{input value=companyname  id="companyname"}}
+      {{input value=companyname placeholder=agriculture.companyname id="companyname"}}
     </div>
     <div class="form-group">
       <label for="details">Deatils:</label>
@@ -23,11 +24,12 @@
     </div>
 
         <!-- <button {{action 'saveAgriculture1'}}> save agriculture</button> -->
-  <div ><button type="button" class="btn btn-info navbar-btn" {{action 'update' agriculture}}>UPDATE AGRICULTURE</button></div>
-        <div>  <button type="button" class="btn btn-success navbar-btn"{{action 'update' health}}> UPDATE IT</button></div>
+  <div >
+<button type="button" class="btn btn-info navbar-btn" {{action 'update' agriculture.id}}>UPDATE AGRICULTURE</button></div>
+        <!-- <div>  <button type="button" class="btn btn-success navbar-btn"{{action 'update' health}}> UPDATE IT</button></div>
         <div>  <button type="button" class="btn btn-info navbar-btn" {{action 'update' it}}> UPDATE HEALTH</button></div>
         <div>  <button type="button" class="btn btn-success navbar-btn" {{action 'update' supply}}> UPDATE SUPPLIES</button></div>
-        <div>  <button type="button" class="btn btn-info navbar-btn" {{action 'update' other}}> UPDATE OTHERS</button></div>
+        <div>  <button type="button" class="btn btn-info navbar-btn" {{action 'update' other}}> UPDATE OTHERS</button></div> -->
 
   </form>
 </div>
@@ -35,6 +37,7 @@
   <div>  <button type="button" class="btn btn-success navbar-btn" {{action 'updateTenderForm'}}> UPDATE TENDER</button>
 </div>
 {{/if}}
+
 
 
 

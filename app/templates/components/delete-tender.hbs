@@ -1,9 +1,14 @@
 <div>
+
   <button type="button" class="btn btn-danger navbar-btn" {{action 'delete' health}}> DELETE HEALTH</button>
 </div>
 
 <div>
-  <button type="button" class="btn btn-danger navbar-btn" {{action 'delete' agriculture}}> DELETE AGRICULTURE</button>
+
+  {{#each model.agricultures as |agriculture|}}
+ <h2>{{agriculture.companyname}}</h2>
+<button type="button" class="btn btn-danger navbar-btn" {{action 'delete' agriculture}}> DELETE AGRICULTURE</button>
+{{/each}}
 </div>
 
 <div>
