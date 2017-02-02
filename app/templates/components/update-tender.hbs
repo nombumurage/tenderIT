@@ -1,4 +1,4 @@
-{{#if addNewTender}}
+{{#if updateTenderForm}}
 <div>
   <form>
     <div class="form-group">
@@ -23,16 +23,16 @@
     </div>
 
         <!-- <button {{action 'saveAgriculture1'}}> save agriculture</button> -->
-  <div ><button type="button" class="btn btn-info navbar-btn" {{action 'saveAgriculture1'}}>  AGRICULTURE</button></div>
-        <div>  <button type="button" class="btn btn-success navbar-btn"{{action 'saveIt1'}}>IT</button></div>
-        <div>  <button type="button" class="btn btn-info navbar-btn" {{action 'saveHealth1'}}>HEALTH</button></div>
-        <div>  <button type="button" class="btn btn-success navbar-btn" {{action 'saveSupply1'}}>SUPPLIES</button></div>
-        <div>  <button type="button" class="btn btn-info navbar-btn" {{action 'saveOther1'}}>OTHERS</button></div>
+  <div ><button type="button" class="btn btn-info navbar-btn" {{action 'update' agriculture}}>UPDATE AGRICULTURE</button></div>
+        <div>  <button type="button" class="btn btn-success navbar-btn"{{action 'update' health}}> UPDATE IT</button></div>
+        <div>  <button type="button" class="btn btn-info navbar-btn" {{action 'update' it}}> UPDATE HEALTH</button></div>
+        <div>  <button type="button" class="btn btn-success navbar-btn" {{action 'update' supply}}> UPDATE SUPPLIES</button></div>
+        <div>  <button type="button" class="btn btn-info navbar-btn" {{action 'update' other}}> UPDATE OTHERS</button></div>
 
   </form>
 </div>
 {{else}}
-  <div>  <button type="button" class="btn btn-success navbar-btn" {{action 'tenderFormShow'}}> ADD TENDER</button>
+  <div>  <button type="button" class="btn btn-success navbar-btn" {{action 'updateTenderForm'}}> UPDATE TENDER</button>
 </div>
 {{/if}}
 

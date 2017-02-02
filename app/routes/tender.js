@@ -14,7 +14,7 @@ export default Ember.Route.extend({
 
 },
 actions: {
-  
+
     saveAgriculture3(params) {
       var newAgriculture = this.store.createRecord('agriculture', params);
       newAgriculture.save();
@@ -39,6 +39,77 @@ actions: {
       var newOther = this.store.createRecord('other', params);
       newOther.save();
       this.transitionTo('other');
-    }
+    },
+    destroyAgriculture(agriculture){
+         agriculture.destroyRecord();
+        this.transitionTo('agriculture');
+
+    },
+    destroyIt(it){
+     it.destroyRecord();
+    this.transitionTo('it');
+
+    },
+    destroySupply(supply){
+      supply.destroyRecord();
+        this.transitionTo('supplies');
+
+    },
+    destroyOther(other){
+   other.destroyRecord();
+    this.transitionTo('others');
+
+    },
+    destroyHealth(health){
+        return health.destroyRecord();
+        this.transitionTo('health');
+    },
+    
+    update(agriculture, params) {
+Object.keys(params).forEach(function(key) {
+  if(params[key]!==undefined) {
+    agriculture.set(key,params[key]);
+  }
+});
+agriculture.save();
+this.transitionTo('agriculture');
+},
+update(supply, params) {
+Object.keys(params).forEach(function(key) {
+if(params[key]!==undefined) {
+suppy.set(key,params[key]);
+}
+});
+supply.save();
+this.transitionTo('supplies');
+},
+update(other, params) {
+Object.keys(params).forEach(function(key) {
+if(params[key]!==undefined) {
+other.set(key,params[key]);
+}
+});
+other.save();
+this.transitionTo('others');
+},
+update(it, params) {
+Object.keys(params).forEach(function(key) {
+if(params[key]!==undefined) {
+it.set(key,params[key]);
+}
+});
+inspect.save();
+this.transitionTo('it ');
+},
+update(health, params) {
+Object.keys(params).forEach(function(key) {
+if(params[key]!==undefined) {
+health.set(key,params[key]);
+}
+});
+health.save();
+this.transitionTo('health');
+}
+
   }
 });

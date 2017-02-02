@@ -12,9 +12,8 @@ h2{
 }
 .container-header{
   background-image: url('../assets/images/unnamed.png');
-  height: 100%;
   background-position: center;
-  padding-bottom: 25%;
+  padding-top: 15%;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,12 +21,12 @@ h2{
   background-size: cover;
   -ms-background-position-x: center;
   -ms-background-position-y: bottom;
-  background-position: center bottom;
+  background-position: center bottom;*/
 }
-.navbar-inverse{
-  background-color: transparent;
-  background: transparent;
-  border-color: transparent;
+.navbar{
+  background: linear-gradient(to bottom, #9c9e9f 0%,#f6f6f6 100%);
+position:fixed;
+
 }
 
 li a {
@@ -39,4 +38,97 @@ li a {
 
 li a:hover {
     background-color: #fff;
+}
+.carousel-content {
+    color:#fff;
+    display:flex;
+    align-items:center;
+    font-size: 30px;
+    text-align: center;
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+#cat1 {
+    width: 100%;
+    height: auto;
+    background-color:#ed5a00  ;
+    color: wheat;
+    box-shadow: 10px 10px 15px #e6e6ff ;
+    margin-bottom: 5px;
+}
+#cat2 {
+    width: 100%;
+    height: auto;
+    background-color:#e6ffff  ;
+    box-shadow: 2px 2px 10px #e6e6ff ;
+}
+
+.det1{
+  width:350px;
+  height: 200px;
+}
+.det2{
+  width:250px;
+  height: 500px;
+}
+.det3{
+  width:300px;
+  height: 350px;
+}
+/*.cat3{
+  background-color: #e6fff9 ;
+  width:100%;
+  height:auto;
+  border: 1px solid;
+}*/
+
+.categry div{
+ margin: 10px;
+}
+.healthy{
+  background-image: url('../assets/images/heart.jpg');
+  width:300px;
+  height: 200px;
+  text-align: center;
+  padding: 80px;
+}
+.agric{
+  background-image: url('../assets/images/ducky.jpg');
+  width:300px;
+  height: 200px;
+  text-align: center;
+  padding: 80px;
+}
+.supply{
+  background-image: url('../assets/images/media.jpg');
+  width:300px;
+  height: 200px;
+  text-align: center;
+  padding: 80px;
+}
+.it{
+  background-image: url('../assets/images/web.jpg');
+  width:300px;
+  height: 200px;
+  text-align: center;
+  padding: 80px;
+}
+.container-cont{
+  text-align: center;
+
+}
+footer{
+  text-align: center;
+  background: linear-gradient(to top,  #9c9e9f  0%,#f6f6f6  100%);
+  height: 100px;
+
+}
+.icon{
+  display: inline-block;
+  margin-right: 100px;
+  margin-top: 2%;
 }

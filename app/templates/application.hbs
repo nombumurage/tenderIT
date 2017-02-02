@@ -1,8 +1,8 @@
-<div class="container-header">
-<nav class="navbar navbar-inverse">
+
+<nav class="navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -11,10 +11,33 @@
       </button>
       <!-- <div class="navbar-brand brand"> <img src="assets/images/tender.png"></div> -->
     </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-leftt">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <ul class="dropdown-menu">
+              <li>{{#link-to 'agriculture'}} AGRICULTURE{{/link-to}}</li>
+              <li>{{#link-to 'health'}}HEALTH{{/link-to}}</li>
+              <li>{{#link-to 'supplies'}}SUPPLY{{/link-to}}</li>
+              <li>{{#link-to 'it'}} IT {{/link-to}}</li>
+              <li>{{#link-to 'others'}}OTHERS{{/link-to}}</li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+
+</div>
+
+
 <div class ="header">
   <h2> TENDER IT</h2>
 </div>
       <ul class="nav navbar-nav navbar-right">
+          <li><a>{{#link-to 'index'}}HOME{{/link-to}}</a></li>
         <li><a>{{#link-to 'about'}}ABOUT US{{/link-to}}</a></li>
         <li><a>{{#link-to 'contact'}}CONTACT US{{/link-to}}</a></li>
         <li><a>{{#link-to 'tender'}}ADMIN{{/link-to}}</a></li>
@@ -22,12 +45,16 @@
 
   </div>
 </nav>
-</div>
 {{outlet}}
 
 
- <div class="app_footer">
-    <footer>
-       {{#link-to 'contact'}}Contact Us{{/link-to}}
-    </footer>
-  </div>
+<!-- footer -->
+  <footer>
+    <div class="icon">
+    <a href="#" class="icon">{{#link-to 'contact'}}&copy; 2017 tenderIT.com  .{{/link-to}}</a>
+    <a href="#" class="icon"><img src="assets/images/facebook1.png" height="50" width="50"> </a>
+    <a href="#" class="icon"><img src="assets/images/g+.png" height="50" width="50"></a>
+    <a href="#" class="icon"><img src="assets/images/twitter1.png" height="50" width="50"></a>
+    </div>
+
+ </footer>

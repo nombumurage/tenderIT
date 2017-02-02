@@ -1,8 +1,14 @@
 {{new-tender saveAgriculture2="saveAgriculture3" saveHealth2="saveHealth3"
 saveSupply2="saveSupply3" saveIt2="saveIt3" saveOther2="saveOther3"}}
 
+{{ delete-tender agriculture=model health=model it=model other=model supply=model
+    destroyAgriculture="destroyAgriculture" destroyHealth="destroyHealth"
+    destroyOther="destroyOther" destroySupply="destroySupply" destroyIt="destroyIt"}}
 
+ {{update-tender agriculture=model health=model supply=model
+   other=model it=model update="update"}}
 
+{{delete-tender }}
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'index'}}Home{{/link-to}}
