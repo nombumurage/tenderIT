@@ -1,6 +1,5 @@
 .header{
 color: orange;
-text-align: ;
 font-family: 'Sonsie One', cursive;
 }
 
@@ -21,11 +20,11 @@ h2{
   background-size: cover;
   -ms-background-position-x: center;
   -ms-background-position-y: bottom;
-  background-position: center bottom;*/
+  background-position: center bottom;
 }
 .navbar{
   background: linear-gradient(to bottom, #9c9e9f 0%,#f6f6f6 100%);
-position:fixed;
+  position:fixed;
 
 }
 
