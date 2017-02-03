@@ -3,10 +3,37 @@
     "companyname": "KACLRO",
     "details": "Seeds for flowers. ",
     "tender_no": "KARLO/1029",
-    "open_dates": "12/01/2017",
-    "close_dates": "15/02/2017",
+    "open_dates": "Wed, Feb 15th 2017, 10:00  ",
+    "close_dates": "Wed, Feb 15th 2017, 10:00  ",
     "downloads": 5
-  }],
+  },{
+"agricultures": {
+      "companyname": "KENYA BROADCASTING CORPORATION   ",
+      "details": "PROVISION OF CONSULTANCY SERVICES FOR LAND DEVELOPMENT AT KBC KOMAROCK STATION   ",
+      "tender_no": "	TENDER NO 21-KBC-16-17   ",
+      "open_dates": "	Tue, Feb 14th 2017, 09:30  ",
+      "close_dates": "Tue, Feb 14th 2017, 09:30   ",
+      "downloads": 3
+  }
+},{"agricultures": {
+      "companyname": "KENYA BROADCASTING CORPORATION   ",
+      "details": "PROVISION OF CONSULTANCY SERVICES FOR LAND DEVELOPMENT AT KBC KOMAROCK STATION   ",
+      "tender_no": "	TENDER NO 21-KBC-16-17   ",
+      "open_dates": "	Tue, Feb 14th 2017, 09:30  ",
+      "close_dates": "Tue, Feb 14th 2017, 09:30   ",
+      "downloads": 3
+  }
+},{
+  "agricultures": {
+    "companyname": "KACLRO",
+    "details": "Seeds for flowers. ",
+    "tender_no": "KARLO/1029",
+    "open_dates": "Wed, Feb 15th 2017, 10:00  ",
+    "close_dates": "Wed, Feb 15th 2017, 10:00  ",
+    "downloads": 5
+}
+}
+],
   "healths": [{
     "companyname": "Phillips",
     "details": "Medical supplies including sygrines, guazes, anti-septics, antibiotis etc",
@@ -14,30 +41,138 @@
     "open_dates": "13/12/2016",
     "close_dates": "25/01/2017",
     "downloads": 15
-  }],
+  },{
+"healths": {
+      "companyname": "COUNTY GOVERNMENT OF BUSIA  ",
+      "details": "PROPOSED ROUTINE MAINTENANCE AND SPOT IMPROVEMENT OF ATERAIT-AMASE-AMONGURAROAD   ",
+      "tender_no": "BSA/CG/642/2016/17   ",
+      "open_dates": "	Tue, Feb 14th 2017, 09:30  ",
+      "close_dates": "Tue, Feb 14th 2017, 09:30   ",
+      "downloads": 3
+  }
+},{
+
+    "healths": {
+      "companyname": "Phillips",
+      "details": "Medical supplies including sygrines, guazes, anti-septics, antibiotis etc",
+      "tender_no": "Ph/342",
+      "open_dates": "13/12/2016",
+      "close_dates": "25/01/2017",
+      "downloads": 15
+}},{
+"healths": {
+    "companyname": "COUNTY GOVERNMENT OF BUSIA  ",
+    "details": "PROPOSED ROUTINE MAINTENANCE AND SPOT IMPROVEMENT OF ATERAIT-AMASE-AMONGURAROAD   ",
+    "tender_no": "BSA/CG/642/2016/17   ",
+    "open_dates": "	Tue, Feb 14th 2017, 09:30  ",
+    "close_dates": "Tue, Feb 14th 2017, 09:30   ",
+    "downloads": 3
+}}
+],
    "its": [{
       "companyname": "SolutionsAfrica",
       "details": "Programming UX/UI developer for 3 months",
       "tender_no": "SA/584/3",
-      "open_dates": "31/01/2017",
-      "close_dates": "14/02/2017",
+      "open_dates": "Tue, Feb 14th 2017, 09:30 ",
+      "close_dates": "Tue, Feb 14th 2017, 09:30 ",
       "downloads": 5
-  }],
-  "supplies": [{
+  },{
+"its": {
+      "companyname": "Kimathi University College Of Technology",
+      "details": "Proposed Plumbing, Drainage and fire protection services for the proposed Main Lecture Theatre.     ",
+      "tender_no": "	DeKUT/OT/LT/033/2016-2017   ",
+      "open_dates": "	Mon, Feb 27th 2017, 10:00 ",
+      "close_dates": "Mon, Feb 27th 2017, 10:00     ",
+      "downloads": 3
+  }
+},{ "its": {
+    "companyname": "SolutionsAfrica",
+    "details": "Programming UX/UI developer for 3 months",
+    "tender_no": "SA/584/3",
+    "open_dates": "Tue, Feb 14th 2017, 09:30 ",
+    "close_dates": "Tue, Feb 14th 2017, 09:30 ",
+    "downloads": 5
+}},{
+"its": {
+    "companyname": "Kimathi University College Of Technology",
+    "details": "Proposed Plumbing, Drainage and fire protection services for the proposed Main Lecture Theatre.     ",
+    "tender_no": "	DeKUT/OT/LT/033/2016-2017   ",
+    "open_dates": "	Mon, Feb 27th 2017, 10:00 ",
+    "close_dates": "Mon, Feb 27th 2017, 10:00     ",
+    "downloads": 3
+}
+},
+],
+ "supplies": [{
       "companyname": "Jumia",
       "details": "Electornics: household appliances, mobiles and TVs sets",
       "tender_no": "J/Elec/796",
-      "open_dates": "10/01/2017",
-      "close_dates":"13/03/2017",
+      "open_dates": "Mon, Feb 27th 2017, 10:27",
+      "close_dates":"	Mon, Feb 27th 2017, 12:00",
       "downloads": 21
-      }],
-  "others": [{
-        "companyname": "AgencyInc",
-        "details": "weygbhrjdfhfojereijpfklewdjpsklrhofjlm",
-        "tender_no": "AI/04755",
-        "open_dates": "30/01/2017",
-        "close_dates": "30/03/2017",
+    },{
+  "supplies": {
+        "companyname": "Kenya Roads Board",
+        "details": "TENDER FOR SUPPLY, INSTALLATION, CONFIGURATION, TESTING, COMMISSIONING AND MAINTENANCE OF AN ENTERPRISE RESORCE PLANNING (ERP) SYSTEM ",
+        "tender_no": "KRB/797/2016-2017  ",
+        "open_dates": "Mon, Feb 27th 2017, 12:00",
+        "close_dates": "Mon, Feb 27th 2017, 12:27 ",
         "downloads": 0
-    }]
+    }
+  },{"supplies": {
+       "companyname": "Jumia",
+       "details": "Electornics: household appliances, mobiles and TVs sets",
+       "tender_no": "J/Elec/796",
+       "open_dates": "Mon, Feb 27th 2017, 10:27",
+       "close_dates":"	Mon, Feb 27th 2017, 12:00",
+       "downloads": 21
+     }},,{
+   "supplies": {
+         "companyname": "Kenya Roads Board",
+         "details": "TENDER FOR SUPPLY, INSTALLATION, CONFIGURATION, TESTING, COMMISSIONING AND MAINTENANCE OF AN ENTERPRISE RESORCE PLANNING (ERP) SYSTEM ",
+         "tender_no": "KRB/797/2016-2017  ",
+         "open_dates": "Mon, Feb 27th 2017, 12:00",
+         "close_dates": "Mon, Feb 27th 2017, 12:27 ",
+         "downloads": 0
+     }
+   }
+  ],
+
+    "others": [{
+          "companyname": "Kimathi University College Of Technology",
+          "details": "Proposed Structured Cabling Installation works for the proposed Main Lecture Theatre.  ",
+          "tender_no": "DeKUT/OT/LT/035/2016-2017    ",
+          "open_dates": "	Mon, Feb 27th 2017, 10:00  ",
+          "close_dates": "Mon, Feb 27th 2017, 10:00 ",
+          "downloads": 9
+        },{
+      "others": {
+            "companyname": "Kimathi University College Of Technology",
+            "details": "Proposed Electrical Installation works for the proposed Main Lecture Theatre.   ",
+            "tender_no": "	DeKUT/OT/LT/036/2016-2017  ",
+            "open_dates": "Mon, Feb 27th 2017, 10:00  ",
+            "close_dates": "Mon, Feb 27th 2017, 10:00   ",
+            "downloads": 3
+        }
+      },
+        {  "others": {
+                "companyname": "Kimathi University College Of Technology",
+                "details": "Proposed Structured Cabling Installation works for the proposed Main Lecture Theatre.  ",
+                "tender_no": "DeKUT/OT/LT/035/2016-2017    ",
+                "open_dates": "	Mon, Feb 27th 2017, 10:00  ",
+                "close_dates": "Mon, Feb 27th 2017, 10:00 ",
+                "downloads": 9
+              }
+     },,{
+   "others": {
+         "companyname": "Kimathi University College Of Technology",
+         "details": "Proposed Electrical Installation works for the proposed Main Lecture Theatre.   ",
+         "tender_no": "	DeKUT/OT/LT/036/2016-2017  ",
+         "open_dates": "Mon, Feb 27th 2017, 10:00  ",
+         "close_dates": "Mon, Feb 27th 2017, 10:00   ",
+         "downloads": 3
+     }
+   }
+    ]
 
 }

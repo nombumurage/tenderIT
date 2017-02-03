@@ -1,6 +1,12 @@
+<div class ="container">
+<div class="agri">
+   {{#link-to 'display-other' other.id}}
+    <p><strong> Company Name:</strong>    {{other.companyname}} </p>
+
+      {{/link-to}}
+</div>
 <div>
-  {{#link-to 'display-other' other.id}}
-    <h2>{{other.companyname}}</h2>
-    {{/link-to}}
-  <p>  {{other.details}}{{other.tender_no}}</p>
+<p>Details:    {{other.details}}</p>
+<p>Tender No:    {{other.tender_no}}</p>
+</div>
 </div>

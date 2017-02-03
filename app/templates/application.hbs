@@ -1,60 +1,96 @@
-
 <nav class="navbar">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- <div class="navbar-brand brand"> <img src="assets/images/tender.png"></div> -->
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <ul class="nav navbar-nav navbar-leftt">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <ul class="dropdown-menu">
-              <li>{{#link-to 'agriculture'}} AGRICULTURE{{/link-to}}</li>
-              <li>{{#link-to 'health'}}HEALTH{{/link-to}}</li>
-              <li>{{#link-to 'supplies'}}SUPPLY{{/link-to}}</li>
-              <li>{{#link-to 'it'}} IT {{/link-to}}</li>
-              <li>{{#link-to 'others'}}OTHERS{{/link-to}}</li>
-            </ul>
-          </ul>
-        </li>
-      </ul>
-    </ul>
-
-</div>
-
-
-<div class ="header">
-  <h2> TENDER IT</h2>
-</div>
+<div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <!-- <a class="navbar-brand" href="#">Brand</a> -->
+     </div>
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class ="header">
+      <h2> TENDER <span><img src="../assets/images/scoop-it.png" alt=""/></span></h2>
       <ul class="nav navbar-nav navbar-right">
+         <li class="active"><a href="#"><span class="sr-only">(current)</span></a></li>
           <li><a>{{#link-to 'index'}}HOME{{/link-to}}</a></li>
-        <li><a>{{#link-to 'about'}}ABOUT US{{/link-to}}</a></li>
-        <li><a>{{#link-to 'contact'}}CONTACT US{{/link-to}}</a></li>
-        <li><a>{{#link-to 'tender'}}ADMIN{{/link-to}}</a></li>
-      </ul>
-
-  </div>
+          <li><a>{{#link-to 'about'}}ABOUT US{{/link-to}}</a></li>
+          <li><a>{{#link-to 'contact'}}CONTACT US{{/link-to}}</a></li>
+          <li><a>{{#link-to 'tender'}}ADMIN{{/link-to}}</a></li>
+          <li class="dropdown">
+            <a href=" #" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>{{#link-to 'agriculture'}} AGRICULTURE{{/link-to}}</li>
+                <li>{{#link-to 'health'}}HEALTH{{/link-to}}</li>
+                <li>{{#link-to 'supplies'}}SUPPLY{{/link-to}}</li>
+                <li>{{#link-to 'it'}} IT {{/link-to}}</li>
+                <li>{{#link-to 'others'}}OTHERS{{/link-to}}</li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>
 </nav>
 {{outlet}}
-
-
 <!-- footer -->
   <footer>
-    <div class="icon">
-    <a href="#" class="icon">{{#link-to 'contact'}}&copy; 2017 tenderIT.com  .{{/link-to}}</a>
-    <a href="#" class="icon"><img src="assets/images/facebook1.png" height="50" width="50"> </a>
-    <a href="#" class="icon"><img src="assets/images/g+.png" height="50" width="50"></a>
-    <a href="#" class="icon"><img src="assets/images/twitter1.png" height="50" width="50"></a>
-    </div>
-
+    <div class="footer">
+      <div class="tenderFooter">
+          <h2> TENDER <span><img src="../assets/images/scoop-it.png" alt=""/></span></h2>
+          <p>Terms and Conditions . Privacy Policy . Creative Commons</p>
+          <h4>Contact Us</h4>
+          <div class="iconFooter">
+          <a href="#" class="icon"><img src="assets/images/facebook.png" height="50" width="50"> </a>
+          <a href="#" class="icon"><img src="assets/images/twitter.png" height="50" width="50"></a>
+          <a href="#" class="icon"><img src="assets/images/google-plus.png" height="50" width="50"></a>
+          <a href="#" class="icon"><img src="assets/images/youtube.png" height="50" width="50"> </a>
+          </div>
+          <hr>
+      </div>
+      <div class="container">
+        <div class="services">
+        <div class="row col-md-12 ">
+          <div class=" det1 col-md-3" id="right">
+              <h3>Services:</h3>
+              Building Services
+              <br>
+              Civil Services
+              <br>
+              Electrical Services
+              <br>
+              Functional Services
+              <br>
+              Professional Services
+              <br>
+              General Services
+            </div>
+          <div class=" det1 col-md-3" id="left">
+              <h3>Supplies:</h3>
+              Clothing/Textiles/Footwear
+              <br>
+              Computer Equipment
+              <br>
+              Electrical Equipment
+              <br>
+              Medical
+              <br>
+              Perishable Provisions
+              <br>
+              Stationery / Printing
+              <br>
+              General
+            </div>
+            <div class=" det1 col-md-6" id="map2">
+            <div class="vertical-line">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4052.2385541255862!2d36.78241851394557!3d-1.3005031360066723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6bf7445dc1%3A0x940b62a3c8efde4c!2sMoringa+School!5e0!3m2!1sen!2ske!4v1486104490756"
+            width="450" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
+      </div> <!-- Services and Maps -->
+    </div> <!--container-->
+  </div>  <!-- footer -->
  </footer>

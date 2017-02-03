@@ -1,5 +1,12 @@
-<div>
-    <div>  {{supply.details}}</div>
-      <div>{{supply.tender_no}}</div>
-    <div> {{supply.open_dates}}{{supply.close_dates}} </div>
+<div class ="container itd">
+<p> <strong>DETAILS:</strong>{{supply.details}}</p>
+<p><strong> TENDER NO:</strong>{{supply.tender_no}}</p>
+<p> <strong>OPEN DATES:</strong>{{supply.open_dates}}</p>
+<p> <strong>CLOSE DATES:</strong>{{supply.close_dates}} </p>
+
+<div class="glyphicon-download-alt">
+<a href="http://supplier.treasury.go.ke/site/tenders.go/index.php/public/tenders/type:new" class="btn btn-primary">
+  Download Tender Form
+  <span class="glyphicon glyphicon-download-alt"></span></a>
+</div>
 </div>

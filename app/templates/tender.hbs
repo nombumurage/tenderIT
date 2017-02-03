@@ -1,38 +1,126 @@
+<div class="container adminF">
 {{new-tender saveAgriculture2="saveAgriculture3" saveHealth2="saveHealth3"
 saveSupply2="saveSupply3" saveIt2="saveIt3" saveOther2="saveOther3"}}
+    <h2>AGRICULTURE</h2>
+    <table class='table table-bordered'>
 
-<!-- {{ delete-tender agriculture=model health=model it=model other=model supply=model
-    destroyAgriculture="destroyAgriculture" destroyHealth="destroyHealth"
-    destroyOther="destroyOther" destroySupply="destroySupply" destroyIt="destroyIt"}} -->
-
-
-
-    <li> {{#each model.agricultures as |agriculture|}}
-    <h2>{{agriculture.companyname}}</h2>
-    <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyAgriculture' agriculture}}> DELETE AGRICULTURE</button>
-     {{update-tender update="update"}}
-    {{/each}}</li>
-
-    {{#each model.healths as |health|}}
-       <h2>{{health.companyname}}</h2>
-       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyHealth' health}}> DELETE HEALTH</button>
-       {{/each}}
-
-      {{#each model.supplies as |supply|}}
-       <h2>{{supply.companyname}}</h2>
-       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroySupply' supply}}> DELETE SUPPLY</button>
-       {{/each}}
-
-      {{#each model.its as |it|}}
-       <h2>{{it.companyname}}</h2>
-       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyIt' it}}> DELETE IT</button>
-       {{/each}}
-
-      {{#each model.others as |other|}}
-       <h2>{{other.companyname}}</h2>
-       <button type="button" class="btn btn-danger navbar-btn" {{action 'destroyOther' other}}> DELETE OTHER</button>
-       {{/each}}
+        <thead>
+         <tr>
+                        <th>Company Name</th>
+                        <th>Tender Details</th>
+                        <th>Tender Number</th>
 
 
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'index'}}Home{{/link-to}}
+           </tr>
+                    </thead>
+                    {{#each model.agricultures as |agriculture|}}
+                    <tbody>
+                        <tr>
+                            <td>{{agriculture.companyname}}</td>
+                            <td>{{agriculture.details}}</td>
+                            <td>{{agriculture.tender_no}}</td>
+                            <td class="hide_all"><button type="button" class="btn btn-danger navbar-btn" {{action 'destroyAgriculture' agriculture}}> Delete</button></td>
+                            <td class="hide_all">{{update-tender update="update"}}</td>
+                        </tr>
+                    </tbody>
+        {{/each}}
+     </table>
+     <h2>HEALTH</h2>
+    <table class='table table-bordered'>
+
+        <thead>
+         <tr>
+                        <th>Company Name</th>
+                        <th>Tender Details</th>
+                        <th>Tender Number</th>
+
+           </tr>
+                    </thead>
+                    {{#each model.healths as |health|}}
+                    <tbody>
+                        <tr>
+                            <td>{{health.companyname}}</td>
+                            <td>{{health.details}}</td>
+                            <td>{{health.tender_no}}</td>
+                            <td><button type="button" class="btn btn-danger navbar-btn" {{action 'destroyHealth' health}}> Delete</button></td>
+                            <td>{{update-tender update="update"}}</td>
+                        </tr>
+                    </tbody>
+        {{/each}}
+     </table>
+      <h2>SUPPLIES</h2>
+    <table class='table table-bordered'>
+
+        <thead>
+         <tr>
+                        <th>Company Name</th>
+                        <th>Tender Details</th>
+                        <th>Tender Number</th>
+
+           </tr>
+                    </thead>
+                    {{#each model.supplies as |supply|}}
+                    <tbody>
+                        <tr>
+                            <td>{{supply.companyname}}</td>
+                            <td>{{supply.details}}</td>
+                            <td>{{supply.tender_no}}</td>
+                            <td ><button type="button" class="btn btn-danger navbar-btn" {{action 'destroySupply' supply}}> Delete</button></td>
+                            <td >{{update-tender update="update"}}</td>
+                        </tr>
+                    </tbody>
+        {{/each}}
+     </table>
+     <h2>IT's</h2>
+    <table class='table table-bordered'>
+
+        <thead>
+         <tr>
+                        <th>Company Name</th>
+                        <th>Tender Details</th>
+                        <th>Tender Number</th>
+
+           </tr>
+                    </thead>
+                    {{#each model.its as |it|}}
+                    <tbody>
+                        <tr>
+                            <td>{{it.companyname}}</td>
+                            <td>{{it.details}}</td>
+                            <td>{{it.tender_no}}</td>
+                            <td><button type="button" class="btn btn-danger navbar-btn" {{action 'destroyIt' it}}> Delete</button></td>
+                            <td>{{update-tender update="update"}}</td>
+                        </tr>
+                    </tbody>
+        {{/each}}
+     </table>
+      <h2>Others</h2>
+    <table class='table table-bordered'>
+
+        <thead>
+         <tr>
+                        <th>Company Name</th>
+                        <th>Tender Details</th>
+                        <th>Tender Number</th>
+
+           </tr>
+                    </thead>
+                    {{#each model.others as |other|}}
+                    <tbody>
+                        <tr>
+                            <td>{{other.companyname}}</td>
+                            <td>{{other.details}}</td>
+                            <td>{{other.tender_no}}</td>
+                            <td><button type="button" class="btn btn-danger navbar-btn" {{action 'destroyOther' other}}> Delete</button></td>
+                            <td>{{update-tender update="update"}}</td>
+                        </tr>
+                    </tbody>
+        {{/each}}
+     </table>
+
+{{#link-to 'agriculture'}}AGRICULTURE{{/link-to}}
+{{#link-to 'health'}}HEALTH{{/link-to}}
+{{#link-to 'it'}} IT{{/link-to}}
+{{#link-to 'supplies'}}SUPPLY{{/link-to}}
+{{#link-to 'others'}}OTHERS{{/link-to}}
+</div>

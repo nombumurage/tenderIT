@@ -1,5 +1,13 @@
-<div>
+<div class ="container otherT">
+  <h1 id ="agr"> OTHER TENDERS </h1>
  {{#each model.others as |other|}}
    <div>{{others-tile other=other}}</div>
  {{/each}}
+   {{iso-time}}
 </div>
+
+{{#link-to 'agriculture'}}AGRICULTURE{{/link-to}}
+{{#link-to 'health'}}HEALTH{{/link-to}}
+{{#link-to 'it'}} IT{{/link-to}}
+{{#link-to 'supplies'}}SUPPLY{{/link-to}}
+{{#link-to 'others'}}OTHERS{{/link-to}}

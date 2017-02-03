@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
+
+ model() {
   return Ember.RSVP.hash({
     agricultures: this.store.findAll('agriculture'),
     tenders: this.store.findAll('tender'),
@@ -10,12 +11,13 @@ export default Ember.Route.extend({
     healths: this.store.findAll('health'),
     others: this.store.findAll('other')
 
-    });
+   });
 
 },
+
 actions: {
 
-    saveAgriculture3(params) {
+   saveAgriculture3(params) {
       var newAgriculture = this.store.createRecord('agriculture', params);
       newAgriculture.save();
       this.transitionTo('agriculture');
@@ -40,32 +42,43 @@ actions: {
       newOther.save();
       this.transitionTo('other');
     },
+
+
     destroyAgriculture(agriculture){
-         agriculture.destroyRecord();
-        this.transitionTo('agriculture');
-
+        if (confirm('Are you sure you want to delete this agriculture?')) {
+          agriculture.destroyRecord();
+        this.transitionTo('tender');
+        }
     },
-    destroyIt(it){
-     it.destroyRecord();
-    this.transitionTo('it');
 
+    destroyIt(it){
+      if (confirm('Are you sure you want to delete this IT?')) {
+          it.destroyRecord();
+        this.transitionTo('tender');
+        }
     },
     destroySupply(supply){
-      supply.destroyRecord();
-        this.transitionTo('supplies');
+      if (confirm('Are you sure you want to delete this supply?')) {
+        supply.destroyRecord();
+        this.transitionTo('tender');
+      }
 
-    },
+   },
     destroyOther(other){
-   other.destroyRecord();
-    this.transitionTo('others');
+      if (confirm('Are you sure you want to delete this tender?')) {
+      other.destroyRecord();
+      this.transitionTo('tender');
+      }
 
-    },
+   },
     destroyHealth(health){
+      if (confirm('Are you sure you want to delete this health?')) {
         return health.destroyRecord();
-        this.transitionTo('health');
+        this.transitionTo('tender');
+      }
     },
 
-    update(agriculture, params) {
+   update(agriculture, params) {
 Object.keys(params).forEach(function(key) {
   if(params[key]!==undefined) {
     agriculture.set(key,params[key]);
@@ -111,5 +124,5 @@ health.save();
 this.transitionTo('health');
 }
 
-  }
+ }
 });

@@ -1,104 +1,91 @@
-
 <div class="container-header">
-
   <div id="text-carousel" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="row">
-
               <div class="carousel-inner">
                   <div class="item active">
                       <div class="carousel-content">
                           <div>
-                              <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
+                              <p>Welcome to the tenderIT website. It's a procurement information system
+                                for Tenders which provides centralised publication of private and government
+                                 business opportunities, annual procurement plans,
+                                multi-use lists and contracts awarded.</p>
                           </div>
                       </div>
                   </div>
                   <div class="item">
                       <div class="carousel-content">
                           <div>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! </p>
+                              <p>The Website offers a range of tools that makes the tendering process easy.It's a procurement
+                                information system
+                                for Tenders which provides centralised publication of private and government
+                                 business opportunities, annual procurement plans,
+                                multi-use lists and contracts awarded.</p>
                           </div>
                       </div>
                   </div>
                   <div class="item">
                       <div class="carousel-content">
                           <div>
-                              <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
+                              <p>Find it! Tender It!It's a procurement information system
+                                for Tenders which provides centralised publication of private and government
+                                 business opportunities, annual procurement plans,
+                                multi-use lists and contracts awarded.</p>
                           </div>
                       </div>
                   </div>
-
               </div>
           </div>
-
       <!-- Controls --> <a class="left carousel-control" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
    <a class="right carousel-control"data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
-
   </div>
+  <div class="swipe">
+       <a href="#body"class="glyphicon glyphicon-menu-down"></a>
+   </div>
 </div>
-
-<h1>Tender Categories</h1>
-<div class="categry col-md-12">
-<div class="agric col-md-3">
-    AGRICULTURE
-</div>
-<div class="healthy col-md-3">
-    {{!--<img src="../assets/images/heart.jpg" class="rounded">--}}
-    HEALTH
-</div >
-<div class="it col-md-3">
-    INFO TECH
-</div>
-<div class="supply col-md-3">
-    SUPPLIES
-</div>
-</div>
-<div class="col-md-12" id="cat1">
-    <h2>Category Information</h2>
-All bids are categorised according to the following: information Technology, supplies, health and Agriculture categories:
-        <div class=" det1 col-md-4">
-                <h3>Services:</h3>
-
-                Building Services
-                <br>
-                Civil Services
-                <br>
-                Electrical Services
-                <br>
-                Functional Services (Including Cleaning and Security Services)
-                <br>
-                Professional Services
-                <br>
-                General Services
-
-        </div>
-        <div class=" det1 col-md-4">
-                <h3>Supplies:</h3>
-                Clothing/Textiles/Footwear
-                <br>
-                Computer Equipment
-                <br>
-                Electrical Equipment
-                <br>
-                Medical
-                <br>
-                Perishable Provisions
-                <br>
-                Stationery / Printing
-                <br>
-                General
-        </div>
-        <div class=" det1 col-md-4">
-                <h3>Disposals:</h3>
-                General disposal
-        </div>
+<div class="container" id="body">
+  <h1>Tender Categories</h1>
+  <div class="row col-md-12">
+  {{#link-to 'agriculture'}}
+      <div class="agric col-md-2">
+        <img src="../assets/images/plant.png" alt=""/>
+        <h3>AGRICULTURE</h3>
+      </div>
+  {{/link-to}}
+  {{#link-to 'health'}}
+    <div class="healthy col-md-2">
+      <img src="../assets/images/stethoscope.png" alt=""/>
+      <h3>HEALTH</h3>
     </div>
-  
-
+  {{/link-to}}
+  {{#link-to 'it'}}
+    <div class="it col-md-2">
+      <img src="../assets/images/laptop3.png" alt=""/>
+      <h3>INFO TECH</h3>
+    </div>
+    {{/link-to}}
+  {{#link-to 'supplies'}}
+      <div class="supply col-md-2">
+        <img src="../assets/images/delivery-truck.png" alt=""/>
+        <h3>SUPPLIES</h3>
+      </div>
+  {{/link-to}}
+  {{#link-to 'others'}}
+  <div class="other col-md-2">
+    <img src="../assets/images/clipboard.png" alt=""/>
+    <h3>OTHERS</h3>
+  </div>
+  {{/link-to}}
+  </div>
+  <div class="swipe1">
+       <a href="#info"class="glyphicon glyphicon-menu-down"></a>
+   </div>
+</div>
+<div class="container" id="info">
 <div class="cat3">
 <h2>Tender Types:</h2>
 RFx is a term used to refer to a family of ‘Request For…’ documents used to solicit responses of various types from suppliers. The three documents used in this family include Request for Information (RFI), Request for Proposal (RFP) and Request for Quote. (RFQ)
@@ -122,7 +109,7 @@ An RFQ is generally used to obtain pricing, delivery information, terms and cond
                                                                                                            _______________
 </div>
 {{#link-to 'agriculture'}}Agriculture{{/link-to}}
-{{#link-to 'supplies'}} Supplies{{/link-to}}
 {{#link-to 'health'}} Health{{/link-to}}
 {{#link-to 'it'}} IT{{/link-to}}
 {{#link-to 'others'}}Others{{/link-to}}
+</div>

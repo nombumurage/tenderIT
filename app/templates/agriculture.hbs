@@ -1,8 +1,19 @@
-<div>
+<div class ="container">
+
+<h1 id ="agr"> AGRICULTURE TENDERS </h1>
   {{#each model.agricultures as |agriculture|}}
     <div>{{agriculture-tile agriculture=agriculture}}</div>
   {{/each}}
+  {{iso-date}}
+
+
 </div>
+
+{{#link-to 'agriculture'}}AGRICULTURE{{/link-to}}
+{{#link-to 'health'}}HEALTH{{/link-to}}
+{{#link-to 'it'}} IT{{/link-to}}
+{{#link-to 'supplies'}}SUPPLY{{/link-to}}
+{{#link-to 'others'}}OTHERS{{/link-to}}
 
 
 <!-- <ul>
